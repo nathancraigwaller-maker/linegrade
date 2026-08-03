@@ -1,0 +1,60 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>kristianzp — Independent Audit | Linegrade</title><style>
+:root{--ground:#F3F5F4;--surface:#FBFCFB;--ink:#131A18;--ink2:#4C5A57;--ink3:#6E7B78;
+--rule:#D2DAD7;--verified:#0F6B52;--claimed:#96620F;
+--display:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;
+--body:ui-serif,Georgia,'Times New Roman',serif;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;}
+@media(prefers-color-scheme:dark){:root{--ground:#0E1413;--surface:#151D1B;--ink:#E9EEEC;--ink2:#9BA8A4;
+--ink3:#7A8784;--rule:#27332F;--verified:#56C29B;--claimed:#DBA344;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;
+padding:0 22px 80px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:40rem;margin:0 auto}
+header{padding:56px 0 22px;border-bottom:2px solid var(--ink)}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--ink3);margin:0 0 14px}
+h1{font-family:var(--display);font-size:clamp(30px,6vw,44px);line-height:1.03;letter-spacing:-.03em;font-weight:700;margin:0 0 10px;text-wrap:balance}
+.sub{color:var(--ink2);margin:0;font-size:17px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule);margin:30px 0}
+.cell{background:var(--surface);padding:20px}
+.cell .lab{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px}
+.cell.c .lab{color:var(--claimed)} .cell.v .lab{color:var(--verified)}
+.big{font-family:var(--mono);font-size:29px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1;margin:0 0 8px}
+.cell p{margin:0;font-size:14.5px;color:var(--ink2);line-height:1.45}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.verdict{border:1px solid var(--rule);border-left:3px solid var(--verified);background:var(--surface);padding:18px 20px;margin:26px 0}
+.verdict .lab{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin:0 0 8px}
+.verdict p{margin:0;font-size:16px}
+h2{font-family:var(--display);font-size:19px;letter-spacing:-.01em;font-weight:700;margin:34px 0 12px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule)}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);font-weight:400}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+.note{font-size:14.5px;color:var(--ink2);line-height:1.55}
+footer{margin-top:40px;padding-top:18px;border-top:2px solid var(--ink);font-family:var(--mono);font-size:11.5px;
+letter-spacing:.04em;color:var(--ink3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+a{color:var(--verified)}
+</style></head><body><div class='wrap'>
+<header>
+  <p class='kicker'>&#9670; Linegrade &middot; Independent audit &#8470; 013</p>
+  <h1>kristianzp</h1>
+  <p class='sub'>An unsolicited, independently settled audit of every moneyline call we could find on the public record.</p>
+</header>
+<div class='grid'>
+  <div class='cell c'><p class='lab'>Claimed record</p><p class='big'>6&ndash;1</p>
+    <p>+63.7% ROI per pick across 7 settled calls &mdash; including ones already decided when we found them. This is the flattering number.</p></div>
+  <div class='cell v'><p class='lab'>Verified record</p><p class='big'>1&ndash;0</p><p>1 picks recorded before the match was played. Beat the odds-implied bar by +0.5 wins (z=0.95).</p></div>
+</div>
+<div class='verdict'><p class='lab'>Verdict</p><p><b>Tracking.</b> 1 verified picks so far &mdash; a genuine start, but well short of the 30&ndash;50 needed before a record can be called an edge rather than a streak.</p></div>
+<h2>The ledger</h2>
+<table>
+  <tr><th>Measure</th><th class='n'>Claimed</th><th class='n'>Verified</th></tr>
+  <tr><td>Settled picks</td><td class='n'>7</td><td class='n'>1</td></tr>
+  <tr><td>Wins</td><td class='n'>6</td><td class='n'>1</td></tr>
+  <tr><td>ROI per pick</td><td class='n'>+63.7%</td><td class='n'>+90.9%</td></tr>
+  <tr><td>vs odds-implied (z)</td><td class='n'>1.70</td><td class='n'>0.95</td></tr>
+  <tr><td>Awaiting settlement</td><td class='n'>&mdash;</td><td class='n'>0</td></tr>
+</table>
+<h2>How this was measured</h2>
+<p class='note'>Picks are collected from the public record and settled independently against real results &mdash; we never take a posted record at face value. A pick counts as <b>verified</b> only if we logged it <i>before the match was played</i>; boards often settle results weeks late, so a pick sitting unresolved when we find it is not proof we were early. Those are counted as claimed. <code>z</code> is how many standard deviations the record sits above what the posted odds already implied &mdash; the bar a pick has to clear to be skill rather than favourites winning. A record becomes an edge at <b>z &ge; 2 over 30&ndash;50 verified picks</b>.</p>
+<p class='note'><b>Not measured here:</b> closing-line value. Grading whether the market moved toward a pick after it was called requires a closing price from a book that actually prices these games, and that data is being collected from today forward. Nothing on this page claims to be CLV.</p>
+<footer><span>Linegrade &middot; Jul 31, 2026</span><span>Leagues: ?, MLB, RUGBY, TENNIS</span></footer>
+</div></body></html>
